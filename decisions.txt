@@ -1,0 +1,3 @@
+installed parser
+choice: built-in, lxml or html5lib
+- used lxml. lxml is both fast and lenient. we can use it when we want to parse xml pages later too.
