@@ -1,11 +1,13 @@
 """
     Scrapes image data from websites        
 """ 
-
+import requests
 from bs4 import BeautifulSoup
 
-with open("data/bags.htm") as fp:
-	soup = BeautifulSoup(fp, "lxml")
+url = "https://shop.nordstrom.com/c/womens-handbags-and-wallets?origin=topnav&breadcrumb=Home%2fWomen%2fHandbags"
+response = requests.get(url)
+
+soup = BeautifulSoup(response.content, "lxml")
 
 image_tags = soup.find_all('img')
 
