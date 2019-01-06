@@ -1,3 +1,12 @@
 installed parser
 choice: built-in, lxml or html5lib
 - used lxml. lxml is both fast and lenient. we can use it when we want to parse xml pages later too.
+
+
+handbags downloaded from nordstrom and macys
+backpacks downloaded from nordstrom, macys, ebags and amazon. 
+
+data labelling
+handbags: a bag that has a string, you can hold or put on your shoulder
+backpack: with two strings and you can put on your back
+others: everything else that are not in two categories. Includes wallets, traveling bags you tie on your waist, cosmetic cases, something that is not a bag including accessories, no strings bags
